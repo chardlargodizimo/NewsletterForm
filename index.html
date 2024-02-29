@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Newsletter Form</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="./assets/images/favicon-32x32.png" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main class="newsletter newsletter--flex">
+
+        <div class="newsletter__image-mobile" aria-label="mobile version - graphs and charts" role="img" aria-hidden="true"></div>
+        <img class="newsletter__image-desktop" src="./assets/images/illustration-sign-up-desktop.svg" alt="desktop version - graphs and charts">
+
+         
+        <article class="wrapper flow newsletter__content">
+            <h1 class="primary-heading">Stay updated!</h1>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
+            <ul class="newsletter__list flow">
+                <li class="newsletter__item flex">
+                    <div><svg aria-label="check icon" role="img" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg></div>
+                    
+                    <p>Product discovery and building what matters</p>
+                </li>
+                <li class="newsletter__item flex flow--small">
+                    <div><svg aria-label="check icon" role="img" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg></div>
+                    <p>Measuring to ensure updates are a success</p>
+                </li>
+                <li class="newsletter__item flex flow--small">
+                    <div><svg aria-label="check icon" role="img" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#FF6155"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg></div>
+                    <p>And much more!</p>
+                </li>
+            </ul>    
+            <form class="sign-up flow" action="/success.html">
+                <div class="sign-up__heading flex">
+                    <label for="email">Email address</label>
+                    <p class="error hide" data-type="error" aria-live="polite">Valid email required</p>
+                </div>
+                <div class="input-container flow--x-small">
+                    <input class="sign-up__eadd" id="email" type="email" placeholder="email@company.com">
+                    <svg aria-label="check icon" role="img" class="valid-email-icon hide" xmlns="http://www.w3.org/2000/svg" width="21" height="21" viewBox="0 0 21 21"><g fill="none"><circle cx="10.5" cy="10.5" r="10.5" fill="#37bc1f"/><path stroke="#FFF" stroke-width="2" d="M6 11.381 8.735 14 15 8"/></g></svg>
+                </div>
+                <button class="form-button" type="submit">Subscribe to monthly newsletter</button>
+            </form>
+        </article>
+                
+         
+    </main>
+
+    <section class="success wrapper flow hide">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64"><defs><linearGradient id="a" x1="100%" x2="0%" y1="0%" y2="100%"><stop offset="0%" stop-color="#FF6A3A"/><stop offset="100%" stop-color="#FF527B"/></linearGradient></defs><g fill="none"><circle cx="32" cy="32" r="32" fill="url(#a)"/><path stroke="#FFF" stroke-width="4" d="m18.286 34.686 8.334 7.98 19.094-18.285"/></g></svg>
+
+        <h1 class="primary-heading flow--medium">Thanks for subscribing!</h1>
+
+        <p>A confirmation email has been sent to <strong id="submitted-email"></strong>. Please open it and click the button inside to confirm your subscription.</p>
+
+        <button class="form-button flow--xx-large" data-type="dismiss">Dismiss message</button>
+
+    </section>
+
+
+    
+
+    <script src="main.js"></script>
+</body>
+</html>
